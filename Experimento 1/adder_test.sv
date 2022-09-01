@@ -5,8 +5,8 @@ module adder_test();
 	
 
 	initial begin
-		a=4'b1110;
-		b=4'b0011;
+		a=4'b0011;
+		b=4'b1011;
 		#10;
 		a=4'b1011;
 		b=4'b1010;
