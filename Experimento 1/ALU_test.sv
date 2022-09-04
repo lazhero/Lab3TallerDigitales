@@ -1,6 +1,6 @@
 module ALU_test();
 
-	logic [3:0] A,B,Out;
+	logic [3:0] A,B,Out,e,f;
 	logic [3:0] sel;
 	logic Z,O,Ca,Neg;
 	ALU #(.N(4)) myALU (.A(A),.B(B),.sel(sel), .out(Out), .Z(Z),.O(O),.Ca(Ca),.Neg(Neg) );

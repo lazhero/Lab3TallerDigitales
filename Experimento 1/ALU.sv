@@ -28,5 +28,4 @@ module ALU #(parameter N=6)(input [N-1:0] A,B, input [3:0] sel, output logic [N-
 	mux_9_1 #(.N(N)) myMux (.select(sel), .a(add_comb),.b(subs_comb),.c(mult_comb),.d(div_comb),.e(mod_comb),.f(f),.g(g),.h(h),.i(i),.j(j),.out(out));
 	FlagsM #(.N(N)) myFlags (.sel(sel), .A(A),.B(B), .a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.h(h),.i(i),.j(j),.Neg(Neg),.Z(Z),.O(O),.Ca(Ca));
 
-	
 endmodule 
