@@ -1,4 +1,4 @@
-module mux_9_1 #(parameter N=5)(input[3:0] select, input[N-1:0] a,b,c,d,e,f,g,h,i,j output[N-1:0] out);
+module mux_9_1 #(parameter N=5)(input[3:0] select, input[N-1:0] a,b,c,d,e,f,g,h,i,j, output logic[N-1:0] out);
 	always_comb begin
 		case(select)
 			4'b0000: out=a;

@@ -1,4 +1,4 @@
-module shifL #(parameter N=6)(input [N-1:0] a, output[N-1:0] c);
+module shifL #(parameter N=6)(input [N-1:0] a,b, output[N-1:0] c);
 
-	assign c=a<< 1;
+	assign c=a<< b;
 endmodule 
