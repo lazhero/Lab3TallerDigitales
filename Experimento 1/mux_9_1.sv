@@ -9,8 +9,8 @@ module mux_9_1 #(parameter N=5)(input[3:0] select, input[N-1:0] a,b,c,d,e,f,g,h,
 			4'b0101: out=f;
 			4'b0110: out=g;
 			4'b0111: out=h;
-			4'b1001: out=i;
-			4'b1010: out=j;
+			4'b1000: out=i;
+			4'b1001: out=j;
 			default: out=j;
 		endcase 
 	end
